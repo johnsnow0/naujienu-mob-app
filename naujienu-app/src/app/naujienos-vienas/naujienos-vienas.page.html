@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{straipsnis.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-content [fullscreen]="true">
+    <ion-card>
+    <ion-img [src]="straipsnis.urlToImage"></ion-img>
+    <ion-card-header>
+      
+      <ion-card-title>{{straipsnis.title}}</ion-card-title>
+      
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>{{straipsnis.content}}</p>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
+
+

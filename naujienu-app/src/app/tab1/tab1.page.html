@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Vilko naujienos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-card *ngFor="let straipsnis of data?.articles" (click)="skaitytiStraipsni(straipsnis)">
+    <ion-img [src]="straipsnis.urlToImage"></ion-img>
+    <ion-card-header>
+      
+      <ion-card-title>{{straipsnis.title}}</ion-card-title>
+      
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>{{straipsnis.description}}</p>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
