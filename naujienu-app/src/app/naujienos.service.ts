@@ -16,7 +16,7 @@ skaitomaNaujiena: any;
 
   constructor(private http: HttpClient) { }
 
-  getData(url){
+  getData(){
     return this.http.get('https://newsapi.org/v2/top-headlines?country=lt&apiKey=859fabdcaefd4abbaad6774c1e17a44c')
   }
 }

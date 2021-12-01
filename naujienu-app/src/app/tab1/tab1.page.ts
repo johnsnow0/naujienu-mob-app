@@ -16,7 +16,7 @@ export class Tab1Page implements OnInit{
 
 
   ngOnInit() {
-    this.naujienos.getData('top-headlines?country=lt').subscribe(data => {console.log(data); this.data = data});
+    this.naujienos.getData().subscribe(data => {console.log(data); this.data = data});
   }
 
   skaitytiStraipsni(straipsnis) {
