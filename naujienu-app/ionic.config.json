@@ -1,7 +1,5 @@
 {
   "name": "naujienu-app",
-  "integrations": {
-    "cordova": {}
-  },
+  "integrations": {},
   "type": "angular"
 }
